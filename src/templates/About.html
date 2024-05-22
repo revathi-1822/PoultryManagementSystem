@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>About Poultry</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .container {
+            background-image: linear-gradient(rgba(67, 43, 43, 0.8), rgba(0, 0, 0, 0.8)), url("https://img.freepik.com/free-photo/young-chicken-pecking-grass-fresh-organic-meadow-generated-by-artificial-intelligence_188544-113310.jpg?t=st=1711595442~exp=1711599042~hmac=6cd11d895a1217a7bca18ed55751e635782cf2f68a4c61ae43095c75fff5b63f&w=1380");
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+
+        }
+        .text-box {
+            color: white;
+            width: 60%;
+            display: inline-block;
+            margin: 150px auto 0;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .counter-p {
+            font-size: 17px;
+        }
+
+        .row {
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 60%;
+            left: 7%;
+        }
+
+        .col {
+            flex-basis: 22%;
+            text-align: center;
+            color: #555;
+        }
+        .counter-box {
+            width: 100%;
+            height: 100%;
+            background: #ebe6e6;
+            padding: 20px 0;
+            border-radius: 0 0 20px -4px #66676c;
+            border-radius: 5px;
+        }
+
+        h2,
+        span {
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 50px;
+            color: #000;
+
+        }
+        .bx {
+            font-size: 50;
+            color: #009688;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            <h2 style="color: white;" class="counter-h2">About Poultry</h2>
+            <p class="counter-p">Chickens are one of the most common types of poultry, prized for their flavorful meat
+                and nutritious
+                eggs.
+                Chickens are also valued for their ability to efficiently convert feed into protein, making them a
+                sustainable source of nutrition.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <i class='bx bxs-cart-alt'></i>
+                    <h2 class="counter">215</h2>
+                    <h4>Weekly Delivered</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class='bx bxs-offer'></i>
+                    <h2 class="counter">2</h2><span>k+</span>
+                    <h4>Special Offers</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class='bx bxs-happy-heart-eyes'></i>
+                    <h2 class="counter">18</h2><span>k+</span>
+                    <h4>Happy Clients</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class='bx bxs-star'></i>
+                    <h2 class="counter">9</h2><span>k+</span>
+                    <h4>Five Stars</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/JS/jquery.counterup.min.js"></script>
+    <script>
+    /*!
+* jquery.counterup.js 1.0
+*
+* Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
+* Released under the GPL v2 License
+*
+* Date: Nov 26, 2013
+*/(function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
+</script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".counter-h2").waypoint(function () {
+                $(".counter-h2").addClass("animate__animated animate__fadeInTopLeft");
+            }, { offset: "80%" });
+        });
+
+        $(document).ready(function () {
+            $(".counter-p").waypoint(function () {
+                $(".counter-p").addClass("animate__animated animate__fadeInTopRight");
+            }, { offset: "80%" });
+        });
+
+        $(document).ready(function () {
+            $(".counter-box").waypoint(function () {
+                $(".counter-box").addClass("animate__animated animate__flipInX");
+            }, { offset: "100%" });
+        });
+    </script>
+</body>
+
+</html>
